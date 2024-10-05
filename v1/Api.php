@@ -27,6 +27,13 @@ if (isset($_GET['apicall'])) {
             $response['message'] = 'Energéticos obtidos com sucesso';
             $response['energeticos'] = $db->getEnergeticos();
             break;
+        
+        case 'getSnacks':
+            $db = new DbOperation();
+            $response['error'] = false;
+            $response['message'] = 'Snacks obtidos com sucesso';
+            $response['snacks'] = $db->getSnacks();
+            break;
 
         default:
             $response['error'] = true;

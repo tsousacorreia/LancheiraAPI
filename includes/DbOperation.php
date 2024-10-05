@@ -70,5 +70,25 @@ class DbOperation
         }
         return $energeticos;
     }
+
+    // Obter snacks
+    function getSnacks()
+    {
+        $stmt = $this->con->prepare("SELECT id, nome, descricao, imagem_url FROM tbSnacks");
+        $stmt->execute();
+        $stmt->bind_result($id, $nome, $descricao, $imagem_url);
+        $snacks = array();
+
+        while ($stmt->fetch()) {
+            $snack = array(
+                'id' => $id,
+                'nome' => $nome,
+                'descricao' => $descricao,
+                'imagem_url' => $imagem_url
+            );
+            array_push($snacks, $snack);
+        }
+        return $snacks;
+    }
 }
 ?>
