@@ -39,35 +39,55 @@ CREATE TABLE tbSnacks (
 
 -- Inserindo dados na tabela de Construtores
 INSERT INTO tbConstrutores (nome, descricao, imagem_url)
-VALUES ('Frango', 'Fonte rica em proteínas', 'https://example.com/frango.jpg'),
-       ('Ovo', 'Alimento com alta qualidade proteica', 'https://example.com/ovo.jpg'),
-       ('Peixe', 'Rico em ômega 3 e proteínas', 'https://example.com/peixe.jpg'),
-       ('Carne bovina', 'Fonte de ferro e proteínas', 'https://example.com/carne.jpg'),
-       ('Queijo', 'Alimento rico em cálcio e proteínas', 'https://example.com/queijo.jpg');
+VALUES ('Ovo cozido', 'Fonte de proteínas e gorduras saudáveis, ideal para o crescimento', 'https://example.com/ovo_cozido.jpg'),
+       ('Queijo cottage', 'Baixo em gordura e rico em proteínas, ótimo para ossos e músculos', 'https://example.com/queijo_cottage.jpg'),
+       ('Peito de frango grelhado', 'Rico em proteínas magras, fácil de digerir e saboroso', 'https://example.com/frango_grelhado.jpg'),
+       ('Iogurte natural', 'Fornece proteínas e probióticos, essenciais para a saúde intestinal', 'https://example.com/iogurte_natural.jpg'),
+       ('Pasta de amendoim', 'Fonte de proteína e gorduras saudáveis, perfeita em pequenas porções', 'https://example.com/pasta_amendoim.jpg'),
+       ('Ricota', 'Queijo leve e rico em proteínas, com baixo teor de sódio', 'https://example.com/ricota.jpg'),
+       ('Homus', 'Creme de grão-de-bico, rico em proteínas e fibras', 'https://example.com/homus.jpg'),
+       ('Tofu', 'Alternativa vegetal rica em proteínas, ótimo para lanches vegetarianos', 'https://example.com/tofu.jpg'),
+       ('Leite de amêndoas', 'Bebida leve, rica em cálcio e proteínas', 'https://example.com/leite_amendoas.jpg'),
+       ('Nozes e castanhas', 'Fontes de proteínas e gorduras boas', 'https://example.com/nozes_castanhas.jpg');
 
 -- Inserindo dados na tabela de Reguladores
 INSERT INTO tbReguladores (nome, descricao, imagem_url)
-VALUES ('Maçã', 'Fruta rica em vitaminas e fibras', 'https://example.com/maca.jpg'),
-       ('Cenoura', 'Legume rico em betacaroteno', 'https://example.com/cenoura.jpg'),
-       ('Brócolis', 'Vegetal rico em fibras e antioxidantes', 'https://example.com/brocolis.jpg'),
-       ('Alface', 'Folha verde rica em vitaminas e minerais', 'https://example.com/alface.jpg'),
-       ('Banana', 'Fruta rica em potássio', 'https://example.com/banana.jpg');
+VALUES ('Cenoura baby', 'Fonte de vitamina A e fibras', 'https://example.com/cenoura_baby.jpg'),
+       ('Pepino', 'Rico em água e fibras, ajuda na hidratação', 'https://example.com/pepino.jpg'),
+       ('Tomate cereja', 'Fonte de vitaminas C e A', 'https://example.com/tomate_cereja.jpg'),
+       ('Uvas', 'Cheias de antioxidantes e vitamina C', 'https://example.com/uvas.jpg'),
+       ('Maçã', 'Rica em fibras e vitamina C', 'https://example.com/maca.jpg'),
+       ('Banana', 'Fonte de potássio e fibras', 'https://example.com/banana.jpg'),
+       ('Morango', 'Rico em vitamina C e antioxidantes', 'https://example.com/morango.jpg'),
+       ('Laranja em gomos', 'Fonte de vitamina C e hidratação', 'https://example.com/laranja.jpg'),
+       ('Mamão', 'Rico em vitamina A e enzimas digestivas', 'https://example.com/mamao.jpg'),
+       ('Pêra', 'Fruta doce e rica em fibras', 'https://example.com/pera.jpg');
 
 -- Inserindo dados na tabela de Energéticos
 INSERT INTO tbEnergeticos (nome, descricao, imagem_url)
-VALUES ('Arroz', 'Fonte de carboidratos de rápida absorção', 'https://example.com/arroz.jpg'),
-       ('Batata', 'Carboidrato complexo', 'https://example.com/batata.jpg'),
-       ('Macarrão', 'Fonte de carboidratos para energia', 'https://example.com/macarrao.jpg'),
-       ('Pão', 'Alimento básico rico em carboidratos', 'https://example.com/pao.jpg'),
-       ('Aveia', 'Rico em fibras e carboidratos complexos', 'https://example.com/aveia.jpg');
+VALUES ('Granola', 'Mix de aveia, mel e sementes', 'https://example.com/granola.jpg'),
+       ('Biscoito integral', 'Fonte de fibras e carboidratos complexos', 'https://example.com/biscoito_integral.jpg'),
+       ('Pão integral', 'Rico em fibras e carboidratos', 'https://example.com/pao_integral.jpg'),
+       ('Banana seca', 'Alternativa doce e rica em potássio', 'https://example.com/banana_seca.jpg'),
+       ('Barras de cereais', 'Fonte de fibras e carboidratos', 'https://example.com/barra_cereal.jpg'),
+       ('Uva-passa', 'Pequena e doce, fornece energia rápida', 'https://example.com/uva_passa.jpg'),
+       ('Bolo de cenoura caseiro', 'Rico em fibras e vitaminas', 'https://example.com/bolo_cenoura.jpg'),
+       ('Batata-doce cozida', 'Fonte de carboidrato de baixo índice glicêmico', 'https://example.com/batata_doce.jpg'),
+       ('Pipoca', 'Fonte de fibras e antioxidantes', 'https://example.com/pipoca.jpg'),
+       ('Milho verde', 'Rico em carboidratos e fibras', 'https://example.com/milho_verde.jpg');
 
 -- Inserindo dados na tabela de Snacks
 INSERT INTO tbSnacks (nome, descricao, imagem_url)
-VALUES ('Iogurte', 'Rico em cálcio e proteínas', 'https://example.com/iogurte.jpg'),
-       ('Biscoito integral', 'Fonte de fibras e carboidratos', 'https://example.com/biscoito.jpg'),
-       ('Granola', 'Mistura rica em fibras e nutrientes', 'https://example.com/granola.jpg'),
-       ('Castanha', 'Fonte de gorduras saudáveis', 'https://example.com/castanha.jpg'),
-       ('Barra de cereal', 'Alimento prático e energético', 'https://example.com/barra.jpg');
+VALUES ('Bolinhas de queijo assadas', 'Pequenas e saborosas, fornecem proteínas e cálcio', 'https://example.com/bolinhas_queijo.jpg'),
+       ('Palitos de cenoura e pepino', 'Crocantes e frescos, perfeitos com homus', 'https://example.com/palitos_vegetais.jpg'),
+       ('Mix de frutas secas', 'Uvas-passas, damascos e maçã desidratada', 'https://example.com/mix_frutas_secas.jpg'),
+       ('Chips de batata-doce', 'Crocantes e saudáveis', 'https://example.com/chips_batata_doce.jpg'),
+       ('Torradinhas integrais', 'Crocantes e ricas em fibras', 'https://example.com/torradinhas_integral.jpg'),
+       ('Frutas frescas em pedaços', 'Cubos de melancia, maçã e kiwi', 'https://example.com/frutas_frescas.jpg'),
+       ('Minipanquecas de aveia', 'Pequenas e fáceis de carregar', 'https://example.com/minipanqueca.jpg'),
+       ('Biscoito de arroz', 'Leve e crocante, perfeito para pastas e queijos', 'https://example.com/biscoito_arroz.jpg'),
+       ('Iogurte grego com mel', 'Leve e com toque doce, fornece cálcio e proteínas', 'https://example.com/iogurte_grego.jpg'),
+       ('Pão de queijo integral', 'Uma versão mais saudável do pão de queijo', 'https://example.com/pao_queijo_integral.jpg');
 
 -- Visualizar os registros das tabelas
 SELECT * FROM tbConstrutores;
